@@ -14,15 +14,22 @@ pygame.display.set_caption("Jump!")
 pygame.mouse.set_visible(0)
 # pygame.key.set_repeat(1, 10)
 
-
-BASELINE = 500
 WHITE = (255, 255, 255)
+BASELINE = 500
+
 catImg = pygame.image.load('../cat.png')
-catx = 10
+catx = 260
 caty = BASELINE
 
 verticalSpeed = 0
 horizontalSpeed = 0
+
+# Remember if the left arrow or right arrow are currently held down.
+# Without these variables, if you lift one key while the other key is 
+# already held down, the character will stop moving, instead of the
+# desired behaviour which is to move in the opposite direction.
+leftKeyPressed  = False
+rightKeyPressed = False
 
 done = False
 while not done:
@@ -30,12 +37,23 @@ while not done:
 
   DISPLAYSURF.blit(catImg, (catx, caty))
 
+
+
   for event in pygame.event.get():
+    # If a key is pressed down...
     if event.type == KEYDOWN:
+      # If the left arrow is pressed, change the speed of the character
       if event.key == K_LEFT:
-        horizontalSpeed -= MOVEMENT_SPEED
+        leftKeyPressed = True
+        # Only change the speed if the character is not already moving.
+        # (In practice, he can only be moving in the opposite direction)
+        if horizontalSpeed == 0:
+          horizontalSpeed -= MOVEMENT_SPEED
+      # Similarly if the right arrow is pressed
       if event.key == K_RIGHT:
-        horizontalSpeed += MOVEMENT_SPEED
+        rightKeyPressed = True
+        if horizontalSpeed == 0:
+          horizontalSpeed += MOVEMENT_SPEED
       # Space to jump
       if event.key == K_SPACE:
         if caty == BASELINE:
@@ -43,9 +61,18 @@ while not done:
       if (event.key == K_ESCAPE):
         done = True
     if event.type == KEYUP:
-      if event.key == K_LEFT or event.key == K_RIGHT:
+      if event.key == K_LEFT:
+        leftKeyPressed = False
         horizontalSpeed = 0
+        if rightKeyPressed:
+          horizontalSpeed += MOVEMENT_SPEED
+      if event.key == K_RIGHT:
+        rightKeyPressed = False
+        horizontalSpeed = 0
+        if leftKeyPressed:
+          horizontalSpeed -= MOVEMENT_SPEED
 
+        
   if caty < BASELINE:
     verticalSpeed -= GRAVITY
   caty -= verticalSpeed
