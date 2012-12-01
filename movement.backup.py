@@ -2,25 +2,25 @@ import pygame
 from pygame.locals import *
 
 pygame.init()
-
-FPS = 60 # frames per second setting
-GRAVITY = 7
-MOVEMENT_SPEED = 25
-
 fpsClock = pygame.time.Clock()
 
-DISPLAYSURF = pygame.display.set_mode((800,600))
-pygame.display.set_caption("Jump!")
-pygame.mouse.set_visible(0)
-# pygame.key.set_repeat(1, 10)
-
+# Constants:
+FPS = 60                # frames per second setting
+GRAVITY = 7             # The speed at which the character falls
+MOVEMENT_SPEED = 25     # The speed at which the char moves left or right.
 WHITE = (255, 255, 255)
 RED   = (255,   0,   0)
 GREEN = (  0, 255,   0)
 BLUE  = (  0,   0, 255)
+BASELINE = 500     # The "floor" which the character can go no lower than.
+CHAR_SPRITE = '../cat.png' # The sprite for the player character
 
-BASELINE = 500 # The "floor" which the character can go no lower than.
+# Create the display window:
+DISPLAYSURF = pygame.display.set_mode((800,600))
+pygame.display.set_caption("Jump!")
+pygame.mouse.set_visible(0)
 
+# Load the player character:
 catImg = pygame.image.load('../cat.png')
 catx = 260
 caty = BASELINE
