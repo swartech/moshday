@@ -1,0 +1,20 @@
+How many bones are there in the body?	>200	>300	<100	>200
+Which planet is closest to the Sun?	Venus	Jupiter	Earth	Venus
+How many teeth do adults have?	>30	<20 >30 >50
+Which is the best conductor?	copper	copper	wood	plastic
+Which is the best insulator?	wood	copper	water	glass
+Granite is __?__	igneous	sedimentary	igneous	metamorphic
+Animals that feed on plants are __?__	herbivores	vegetarians	herbivores	carnivores
+Which teeth cut?	incisors	molars	canines	incisors
+Which teeth tear?	canines	canines	incisors	molars
+Which teeth chew?	molars	incisors	molars	canines
+__?__ is opaque	brick	glass	tissue paper	brick
+__?__ is transparent	perspex	perspex	brick	frosted glass	
+__?__ is translucent	frosted glass	wood	glass	frosted glass
+All living things __?__ reproduce	reproduce	
+All living things __?__ excrete	shiver	excrete	jump
+All living things __?__ grow	dance	sleep	grow	
+All living things __?__ feed	shiver	feed	speak	
+All living things __?__ move	breathe	dance	move	
+All living things __?__ use energy	use energy	speak	breathe
+All living things __?__ react to the environment	sleep	react to the environment	jump
