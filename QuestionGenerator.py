@@ -35,7 +35,7 @@ def random_maths(lower, upper, operator):
 		answer2 = answer + (random.randint(-3, 3))
 		
 	answers = [answer, answer1, answer2]
-	random.shuffle([answer, answer1, answer2])
+	random.shuffle(answers)
 	
 	return '%s\t%d\t%d\t%d\t%d\n' % (question, answer, answers[0], answers[1], answers[2])
 	

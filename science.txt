@@ -1,10 +1,10 @@
-All living things __?__ move	breathe	dance	move	
 Which teeth chew?	molars	incisors	molars	canines
-Which teeth cut?	incisors	molars	canines	incisors
-All living things __?__ react to the environment	sleep	react to the environment	jump
-All living things __?__ grow	dance	sleep	grow	
-Animals that feed on plants are __?__	herbivores	vegetarians	herbivores	carnivores
+All living things __?__ reproduce	reproduce	
 Which is the best conductor?	copper	copper	wood	plastic
-__?__ is opaque	brick	glass	tissue paper	brick
-Granite is __?__	igneous	sedimentary	igneous	metamorphic
-How many bones are there in the body?	>200	>300	<100	>200
+All living things __?__ move	breathe	dance	move	
+How many teeth do adults have?	>30	<20 >30 >50
+All living things __?__ react to the environment	sleep	react to the environment	jump
+Which teeth cut?	incisors	molars	canines	incisors
+Which is the best insulator?	wood	copper	water	glass
+Animals that feed on plants are __?__	herbivores	vegetarians	herbivores	carnivores
+__?__ is transparent	perspex	perspex	brick	frosted glass	
